@@ -1,0 +1,32 @@
+[
+  {
+    "id": "syllabus",
+    "title": "Syllabus",
+    "description": "Access syllabus of all semesters",
+    "isPremium": false
+  },
+  {
+    "id": "notes",
+    "title": "Notes",
+    "description": "Subject-wise notes for all semesters",
+    "isPremium": false
+  },
+  {
+    "id": "pyq",
+    "title": "Previous year question papers",
+    "description": "Question papers of different years",
+    "isPremium": false
+  },
+  {
+    "id": "job-alerts",
+    "title": "Job alerts",
+    "description": "Latest job updates for BCA students",
+    "isPremium": true
+  },
+  {
+    "id": "solved-pyq",
+    "title": "PYQs solved notes",
+    "description": "Detailed solutions of previous year questions",
+    "isPremium": true
+  }
+]

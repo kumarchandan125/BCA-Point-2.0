@@ -1,0 +1,29 @@
+[
+  {
+    "id": "mat1",
+    "title": "C Programming Unit 1 Notes",
+    "categoryId": "notes",
+    "semesterId": "sem1",
+    "subjectId": "c-programming",
+    "pdfUrl": "https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf",
+    "isPremium": false
+  },
+  {
+    "id": "mat2",
+    "title": "C Programming Full Syllabus PDF",
+    "categoryId": "syllabus",
+    "semesterId": "sem1",
+    "subjectId": "c-programming",
+    "pdfUrl": "https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf",
+    "isPremium": false
+  },
+  {
+    "id": "mat3",
+    "title": "DBMS PYQ 2023",
+    "categoryId": "pyq",
+    "semesterId": "sem2",
+    "subjectId": "dbms",
+    "pdfUrl": "https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf",
+    "isPremium": false
+  }
+]

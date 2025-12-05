@@ -1,0 +1,6 @@
+[
+  { "id": "c-programming", "name": "C Programming", "semesterId": "sem1" },
+  { "id": "dbms", "name": "DBMS", "semesterId": "sem2" },
+  { "id": "os", "name": "Operating System", "semesterId": "sem2" },
+  { "id": "dsa", "name": "Data Structures", "semesterId": "sem3" }
+]

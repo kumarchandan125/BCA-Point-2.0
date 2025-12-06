@@ -12,13 +12,23 @@ function Navbar() {
     navigate("/login", { replace: true });
   };
 
+  const isAuthed =
+    typeof window !== "undefined" &&
+    localStorage.getItem("bca_auth") === "true";
+
   return (
     <header className="border-b border-slate-800 bg-slate-950/80 backdrop-blur">
       <div className="max-w-6xl mx-auto px-4 py-3 flex items-center justify-between gap-3">
+        
+        {/* Logo */}
         <div
           className="flex items-center gap-2 cursor-pointer"
           onClick={() => {
-            navigate("/");
+            if (isAuthed) {
+              navigate("/dashboard");
+            } else {
+              navigate("/");
+            }
             window.scrollTo({ top: 0, behavior: "smooth" });
           }}
         >
@@ -33,20 +43,37 @@ function Navbar() {
           </div>
         </div>
 
+        {/* Right Options */}
         <div className="flex items-center gap-2">
+
+          {/* Search */}
           <button
             onClick={() => navigate("/search")}
             className="text-[11px] px-3 py-1.5 rounded-full border border-slate-700 hover:border-indigo-500 transition"
           >
             🔍 Search
           </button>
+
+          {/* ⭐ AI Helper Button (NEW) */}
+          {isAuthed && (
+            <button
+              onClick={() => navigate("/assistant")}
+              className="text-[11px] px-3 py-1.5 rounded-full border border-slate-700 hover:border-purple-500 transition"
+            >
+              🤖 AI Helper
+            </button>
+          )}
+
           {/* Profile */}
-          <button
-            onClick={() => navigate("/profile")}
-            className="text-[11px] px-3 py-1.5 rounded-full border border-slate-700 hover:border-emerald-500 transition"
-          >
-            👤 Profile
-          </button>
+          {isAuthed && (
+            <button
+              onClick={() => navigate("/profile")}
+              className="text-[11px] px-3 py-1.5 rounded-full border border-slate-700 hover:border-emerald-500 transition"
+            >
+              👤 Profile
+            </button>
+          )}
+
           {/* Theme toggle */}
           <button
             onClick={toggleTheme}
@@ -56,12 +83,14 @@ function Navbar() {
           </button>
 
           {/* Logout */}
-          <button
-            onClick={handleLogout}
-            className="text-[11px] text-white px-3 py-1.5 rounded-full border border-slate-700 hover:border-red-500 hover:text-red-400 transition"
-          >
-            Logout
-          </button>
+          {isAuthed && (
+            <button
+              onClick={handleLogout}
+              className="text-[11px] text-white px-3 py-1.5 rounded-full border border-slate-700 hover:border-red-500 hover:text-red-400 transition"
+            >
+              Logout
+            </button>
+          )}
         </div>
       </div>
     </header>

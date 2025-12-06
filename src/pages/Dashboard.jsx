@@ -478,6 +478,7 @@ function Dashboard() {
           </section>
         )}
       </motion.main>
+      
     </div>
   );
 }

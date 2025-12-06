@@ -22,9 +22,9 @@ export default function Footer() {
               <span className="text-red-400 mx-1 animate-pulse">❤️</span>
               by
               <span className="bg-gradient-to-r from-indigo-400 via-sky-400 to-emerald-400 bg-clip-text text-transparent font-semibold mx-1">
-                Chandan
+                Chandan Pandey
               </span>
-              • BCA Semester 1
+              • BCA Semester 2
             </p>
 
             <p className="text-[10px] text-slate-500/80">
